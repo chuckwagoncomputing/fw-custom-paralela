@@ -9,7 +9,6 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    needs: read-meta-info
     uses: chuckwagoncomputing/rusefi/.github/workflows/custom-board-build.yaml@makeover-bundle
     secrets: inherit
     permissions:
