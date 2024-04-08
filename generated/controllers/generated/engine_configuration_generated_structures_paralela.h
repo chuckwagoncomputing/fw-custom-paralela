@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Apr 03 17:27:16 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Apr 08 17:27:06 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -5139,67 +5139,67 @@ struct persistent_config_s {
 	 * units: Airmass
 	 * offset 21080
 	 */
-	scaled_channel<uint8_t, 50, 1> tcu_pcAirmassBins[TCU_MAGIC_SIZE];
+	scaled_channel<uint8_t, 50, 1> tcu_pcAirmassBins[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21088
 	 */
-	uint8_t tcu_pcValsR[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcValsR[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21096
 	 */
-	uint8_t tcu_pcValsN[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcValsN[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21104
 	 */
-	uint8_t tcu_pcVals1[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals1[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21112
 	 */
-	uint8_t tcu_pcVals2[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals2[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21120
 	 */
-	uint8_t tcu_pcVals3[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals3[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21128
 	 */
-	uint8_t tcu_pcVals4[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals4[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21136
 	 */
-	uint8_t tcu_pcVals12[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals12[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21144
 	 */
-	uint8_t tcu_pcVals23[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals23[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21152
 	 */
-	uint8_t tcu_pcVals34[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals34[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21160
 	 */
-	uint8_t tcu_pcVals21[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals21[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21168
 	 */
-	uint8_t tcu_pcVals32[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals32[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21176
 	 */
-	uint8_t tcu_pcVals43[TCU_MAGIC_SIZE];
+	uint8_t tcu_pcVals43[TCU_TABLE_WIDTH];
 	/**
 	 * units: TPS
 	 * offset 21184
@@ -5547,4 +5547,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 24500);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Wed Apr 03 17:27:16 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Apr 08 17:27:06 UTC 2024
