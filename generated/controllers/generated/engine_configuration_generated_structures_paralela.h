@@ -1,4 +1,4 @@
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Apr 08 17:27:06 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Tue Apr 09 17:26:30 UTC 2024
 // by class com.rusefi.output.CHeaderConsumer
 // begin
 #pragma once
@@ -4514,10 +4514,14 @@ struct engine_configuration_s {
 	 */
 	int anotherCiTest;
 	/**
-	 * units: units
 	 * offset 3992
 	 */
-	uint8_t unusedOftenChangesDuringFirmwareUpdate[226];
+	uint32_t device_uid[3];
+	/**
+	 * units: units
+	 * offset 4004
+	 */
+	uint8_t unusedOftenChangesDuringFirmwareUpdate[214];
 	/**
 	 * need 4 byte alignment
 	 * units: units
@@ -5139,7 +5143,7 @@ struct persistent_config_s {
 	 * units: Airmass
 	 * offset 21080
 	 */
-	scaled_channel<uint8_t, 50, 1> tcu_pcAirmassBins[TCU_TABLE_WIDTH];
+	scaled_channel<uint8_t, 1, 5> tcu_pcAirmassBins[TCU_TABLE_WIDTH];
 	/**
 	 * units: %
 	 * offset 21088
@@ -5547,4 +5551,4 @@ struct persistent_config_s {
 static_assert(sizeof(persistent_config_s) == 24500);
 
 // end
-// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Mon Apr 08 17:27:06 UTC 2024
+// this section was generated automatically by rusEFI tool config_definition-all.jar based on (unknown script) integration/rusefi_config.txt Tue Apr 09 17:26:30 UTC 2024
