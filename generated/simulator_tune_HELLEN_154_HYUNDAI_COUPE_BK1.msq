@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="24500">
+    <page number="0" size="24756">
         <constant name="engineType">"HELLEN_154_HYUNDAI_COUPE_BK1"</constant>
         <constant digits="0" name="startButtonSuppressOnStartUpMs" units="">0.0</constant>
         <constant digits="0" name="sensorSnifferRpmThreshold" units="RPM">2500.0</constant>
@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024041E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240411E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -754,6 +754,14 @@
         <constant name="is_enabled_spi_6">"false"</constant>
         <constant name="enableAemXSeriesEgt">"false"</constant>
         <constant name="skipBoardCanDash">"false"</constant>
+        <constant name="devBit0">"false"</constant>
+        <constant name="devBit1">"false"</constant>
+        <constant name="devBit2">"false"</constant>
+        <constant name="devBit3">"false"</constant>
+        <constant name="devBit4">"false"</constant>
+        <constant name="devBit5">"false"</constant>
+        <constant name="devBit6">"false"</constant>
+        <constant name="devBit7">"false"</constant>
         <constant digits="0" name="afterCrankingIACtaperDuration" units="cycles">100.0</constant>
         <constant digits="0" name="iacByTpsTaper" units="percent">2.0</constant>
         <constant name="auxSerialTxPin">"NONE"</constant>
@@ -4300,27 +4308,27 @@ end</constant>
          0.0
          0.0
          0.0
-         0.0
-         0.0
+         9.183550000000001E-40
+         3.67346E-39
 </constant>
         <constant cols="1" digits="0" name="tcu_rangeM3" rows="6">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         6.428569999999999E-39
+         9.183679999999999E-39
+         1.3577E-36
+         7.05008E-32
+         3.40942E-27
+         1.7792E-22
 </constant>
         <constant cols="1" digits="0" name="tcu_rangeM2" rows="6">
          0.0
-         0.0
-         0.0
-         0.0
-         0.0
+         2.90204E-38
+         1.3739099999999998E-37
+         6.37738E-37
+         1.69427E-21
          0.0
 </constant>
         <constant cols="1" digits="0" name="tcu_rangeM1" rows="6">
-         0.0
+         7.19861E-41
          0.0
          0.0
          0.0
@@ -4371,43 +4379,43 @@ end</constant>
 </constant>
         <constant cols="6" digits="0" name="injectorStagingTable" rows="6">
          0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 10.0 0.0
-         30.0 0.0 40.0 0.0 60.0 0.0
-         70.0 0.0 90.0 0.0 100.0 0.0
-         0.0 0.0 231.0 3.0 207.0 7.0
+         10.0 0.0 30.0 0.0 40.0 0.0
+         60.0 0.0 70.0 0.0 90.0 0.0
+         100.0 0.0 0.0 0.0 231.0 3.0
+         207.0 7.0 183.0 11.0 159.0 15.0
+         135.0 19.0 111.0 23.0 87.0 27.0
 </constant>
         <constant cols="1" digits="0" name="injectorStagingLoadBins" rows="6">
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
          0.0
-</constant>
-        <constant cols="1" digits="0" name="injectorStagingRpmBins" rows="6">
          0.0
          143.0
          286.0
          429.0
          571.0
+</constant>
+        <constant cols="1" digits="0" name="injectorStagingRpmBins" rows="6">
          714.0
+         857.0
+         1000.0
+         7424.0
+         22073.0
+         36722.0
 </constant>
         <constant cols="1" digits="0" name="wwCltBins" rows="8">
-         89.0
-         3.0
-         -24.0
-         3.0
+         -85.0
+         -56.0
          0.0
-         29.0
-         57.0
-         86.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
 </constant>
         <constant cols="1" digits="2" name="wwTauCltValues" rows="8">
-         1.14
-         1.43
-         1.71
-         2.0
+         0.0
+         0.0
+         0.0
+         0.0
          0.0
          0.0
          0.0
@@ -4511,10 +4519,10 @@ end</constant>
 </constant>
         <constant cols="10" digits="0" name="hpfpTarget" rows="10">
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         10.0 30.0 40.0 60.0 70.0 90.0 100.0 0.0 999.0 1999.0
-         2999.0 3999.0 4999.0 5999.0 6999.0 0.0 0.0 143.0 286.0 429.0
-         571.0 714.0 857.0 1000.0 7424.0 22073.0 36722.0 51371.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 10.0 30.0 40.0 60.0 70.0
+         90.0 100.0 0.0 999.0 1999.0 2999.0 3999.0 4999.0 5999.0 6999.0
+         0.0 0.0 143.0 286.0 429.0 571.0 714.0 857.0 1000.0 7424.0
+         22073.0 36722.0 51371.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
@@ -4531,27 +4539,27 @@ end</constant>
          0.0
          0.0
          0.0
-         0.0
+         1.0
 </constant>
         <constant cols="1" digits="0" name="hpfpTargetRpmBins" rows="10">
+         1500.0
          0.0
+         2000.0
          0.0
+         3000.0
          0.0
+         3500.0
          0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         500.0
+         4500.0
          0.0
 </constant>
         <constant cols="10" digits="0" name="hpfpCompensation" rows="10">
-         30.0 0.0 40.0 0.0 60.0 0.0 70.0 0.0 90.0 0.0
          100.0 0.0 0.0 0.0 -25.0 3.0 -49.0 7.0 -73.0 11.0
          -97.0 15.0 -121.0 19.0 111.0 23.0 87.0 27.0 0.0 0.0
          0.0 0.0 -113.0 0.0 30.0 1.0 -83.0 1.0 59.0 2.0
          -54.0 2.0 89.0 3.0 -24.0 3.0 0.0 29.0 57.0 86.0
          114.0 -113.0 -85.0 -56.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
@@ -4614,75 +4622,146 @@ end</constant>
          0.0
          0.0
          0.0
-         0.0
+         5.0
          0.0
 </constant>
         <constant cols="1" digits="0" name="tpsTspCorrValuesBins" rows="4">
+         1500.0
          0.0
-         0.0
-         0.0
+         2000.0
          0.0
 </constant>
         <constant cols="1" digits="2" name="tpsTspCorrValues" rows="4">
+         1.2
          0.0
-         0.0
-         0.0
+         1.4
          0.0
 </constant>
         <constant cols="1" digits="0" name="cltRevLimitRpmBins" rows="4">
-         10.0
+         90.0
          0.0
-         30.0
+         100.0
          0.0
 </constant>
         <constant cols="1" digits="0" name="cltRevLimitRpm" rows="4">
-         40.0
-         60.0
-         70.0
-         90.0
+         0.0
+         999.0
+         1999.0
+         2999.0
 </constant>
         <constant cols="1" digits="3" name="fuelLevelBins" rows="8">
-         0.1
-         0.0
-         0.999
-         1.999
-         2.999
          3.999
          4.999
          5.999
+         6.999
+         0.0
+         0.0
+         0.143
+         0.286
 </constant>
         <constant cols="1" digits="0" name="fuelLevelValues" rows="8">
-         87.0
-         27.0
-         0.0
-         0.0
-         0.0
-         0.0
-         143.0
-         0.0
+         173.0
+         1.0
+         59.0
+         2.0
+         202.0
+         2.0
+         89.0
+         3.0
 </constant>
         <constant cols="1" digits="1" name="dwellVoltageCorrVoltBins" rows="8">
-         3.0
-         0.1
-         17.3
-         0.1
-         5.9
-         0.2
-         20.2
-         0.2
+         23.2
+         0.3
+         0.0
+         2.9
+         5.7
+         8.6
+         11.4
+         14.3
 </constant>
         <constant cols="1" digits="2" name="dwellVoltageCorrValues" rows="8">
-         1.78
-         0.06
-         4.64
-         0.06
+         3.42
+         4.0
          0.0
-         0.58
-         1.14
-         1.72
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
 </constant>
+        <constant cols="1" digits="2" name="tcu_shiftTpsBins" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed12" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed23" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed34" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed21" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed32" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant cols="1" digits="0" name="tcu_shiftSpeed43" rows="8">
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+         0.0
+</constant>
+        <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.04.10.paralela.3273636998" version="5.0"/>
+    <versionInfo firmwareInfo="20240402" nPages="1" signature="rusEFI default.2024.04.11.paralela.2954753984" version="5.0"/>
     <bibliography author="rusEFI 20240402" writeDate="date"/>
     <settings/>
     <userComments/>
