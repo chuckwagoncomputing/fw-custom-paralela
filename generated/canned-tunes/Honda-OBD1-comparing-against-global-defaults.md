@@ -183,6 +183,7 @@
 	cannedtpsTpsAccelFromRpmBins();
 	cannedtpsTpsAccelToRpmBins();
 	cannedtpsTpsAccelTable();
+	cannedtractionControlSlipBins();
 	cannedboostTableOpenLoop();
 	cannedvvtTable1RpmBins();
 	cannedvvtTable1LoadBins();

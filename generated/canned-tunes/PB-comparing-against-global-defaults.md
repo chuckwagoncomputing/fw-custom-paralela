@@ -289,6 +289,7 @@
 	pbcannedtpsTpsAccelFromRpmBins();
 	pbcannedtpsTpsAccelToRpmBins();
 	pbcannedtpsTpsAccelTable();
+	pbcannedtractionControlSlipBins();
 	pbcannedvvtTable1RpmBins();
 	pbcannedvvtTable1LoadBins();
 	pbcannedvvtTable1();

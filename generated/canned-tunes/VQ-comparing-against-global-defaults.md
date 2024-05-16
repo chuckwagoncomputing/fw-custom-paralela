@@ -360,6 +360,7 @@
 	cannedtpsTpsAccelFromRpmBins();
 	cannedtpsTpsAccelToRpmBins();
 	cannedtpsTpsAccelTable();
+	cannedtractionControlSlipBins();
 	cannedboostRpmBins();
 	cannedboostTableOpenLoop();
 	cannedvvtTable1RpmBins();

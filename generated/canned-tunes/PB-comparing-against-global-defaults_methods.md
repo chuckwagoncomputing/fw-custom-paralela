@@ -418,6 +418,11 @@ static void pbcannedtpsTpsAccelTable() {
 	copyTable(config->tpsTpsAccelTable, hardCodedtpsTpsAccelTable);
 }
 
+static void pbcannedtractionControlSlipBins() {
+	static const float hardCodedtractionControlSlipBins[6] = {0.8, 0.9, 0.95, 1.05, 1.1, 1.2};
+	copyArray(engineConfiguration->tractionControlSlipBins, hardCodedtractionControlSlipBins);
+}
+
 static void pbcannedvvtTable1RpmBins() {
 	static const float hardCodedvvtTable1RpmBins[8] = {650.0, 800.0, 1700.0, 2600.0, 3500.0, 4400.0, 5300.0, 7000.0};
 	copyArray(config->vvtTable1RpmBins, hardCodedvvtTable1RpmBins);

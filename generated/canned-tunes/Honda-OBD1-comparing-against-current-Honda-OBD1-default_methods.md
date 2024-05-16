@@ -398,6 +398,11 @@ static void cannedtpsTpsAccelTable() {
 	copyTable(config->tpsTpsAccelTable, hardCodedtpsTpsAccelTable);
 }
 
+static void cannedtractionControlSlipBins() {
+	static const float hardCodedtractionControlSlipBins[6] = {0.8, 0.9, 0.95, 1.05, 1.1, 1.2};
+	copyArray(engineConfiguration->tractionControlSlipBins, hardCodedtractionControlSlipBins);
+}
+
 static void cannedboostTableOpenLoop() {
 	static const float hardCodedboostTableOpenLoop[8][8] = {
 {0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
