@@ -306,8 +306,6 @@
 	nb2cannedcrankingFuelCoefE100();
 	nb2cannedcltRevLimitRpmBins();
 	nb2cannedcltRevLimitRpm();
-	nb2cannedcrankingCycleBins();
-	nb2cannedcrankingCycleCoef();
 	nb2cannedcltIdleCorrBins();
 	nb2cannedcltIdleCorr();
 	nb2cannedcltCrankingCorr();
@@ -413,4 +411,5 @@
 	nb2cannedhpfpTargetLoadBins();
 	nb2cannedhpfpCompensation();
 	nb2cannedpostCrankingFactor();
+	nb2cannedcrankingCycleBins();
 ```

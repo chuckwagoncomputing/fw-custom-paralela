@@ -188,8 +188,6 @@
 	coupleBK1cannedcrankingFuelCoefE100();
 	coupleBK1cannedcltRevLimitRpmBins();
 	coupleBK1cannedcltRevLimitRpm();
-	coupleBK1cannedcrankingCycleBins();
-	coupleBK1cannedcrankingCycleCoef();
 	coupleBK1cannedcltIdleCorrBins();
 	coupleBK1cannedcltIdleCorr();
 	coupleBK1cannedcltIdleRpm();
@@ -344,4 +342,5 @@
 	coupleBK1cannedhpfpCompensationLoadBins();
 	coupleBK1cannedhpfpCompensation();
 	coupleBK1cannedpostCrankingFactor();
+	coupleBK1cannedcrankingCycleBins();
 ```

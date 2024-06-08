@@ -114,16 +114,6 @@ static void coupleBK2cannedcltRevLimitRpm() {
 	copyArray(config->cltRevLimitRpm, hardCodedcltRevLimitRpm);
 }
 
-static void coupleBK2cannedcrankingCycleBins() {
-	static const float hardCodedcrankingCycleBins[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
-	copyArray(config->crankingCycleBins, hardCodedcrankingCycleBins);
-}
-
-static void coupleBK2cannedcrankingCycleCoef() {
-	static const float hardCodedcrankingCycleCoef[8] = {2.0, 1.3, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-	copyArray(config->crankingCycleCoef, hardCodedcrankingCycleCoef);
-}
-
 static void coupleBK2cannedcltIdleCorrBins() {
 	static const float hardCodedcltIdleCorrBins[16] = {-40.13, -30.13, -20.13, -10.13, -0.13, 9.87, 19.87, 29.87, 39.87, 49.87, 59.87, 69.87, 79.87, 89.87, 99.87, 109.87};
 	copyArray(config->cltIdleCorrBins, hardCodedcltIdleCorrBins);
@@ -1312,6 +1302,11 @@ static void coupleBK2cannedpostCrankingFactor() {
 {0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
 };
 	copyTable(engineConfiguration->postCrankingFactor, hardCodedpostCrankingFactor);
+}
+
+static void coupleBK2cannedcrankingCycleBins() {
+	static const float hardCodedcrankingCycleBins[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
+	copyArray(config->crankingCycleBins, hardCodedcrankingCycleBins);
 }
 
 ```

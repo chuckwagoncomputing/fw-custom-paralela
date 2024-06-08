@@ -227,8 +227,6 @@
 	pbcannedcrankingFuelCoefE100();
 	pbcannedcltRevLimitRpmBins();
 	pbcannedcltRevLimitRpm();
-	pbcannedcrankingCycleBins();
-	pbcannedcrankingCycleCoef();
 	pbcannedcltIdleCorrBins();
 	pbcannedcltIdleCorr();
 	pbcannedcltIdleRpm();
@@ -402,4 +400,5 @@
 	pbcannedhpfpCompensationRpmBins();
 	pbcannedhpfpCompensationLoadBins();
 	pbcannedhpfpCompensation();
+	pbcannedcrankingCycleBins();
 ```

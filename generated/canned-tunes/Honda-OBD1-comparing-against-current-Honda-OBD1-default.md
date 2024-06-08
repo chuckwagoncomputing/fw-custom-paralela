@@ -104,8 +104,6 @@
 	cannedcrankingFuelCoefE100();
 	cannedcltRevLimitRpmBins();
 	cannedcltRevLimitRpm();
-	cannedcrankingCycleBins();
-	cannedcrankingCycleCoef();
 	cannedcltIdleCorrBins();
 	cannedcltIdleCorr();
 	cannedfuelLevelBins();
@@ -279,4 +277,5 @@
 	cannedhpfpCompensationRpmBins();
 	cannedhpfpCompensationLoadBins();
 	cannedhpfpCompensation();
+	cannedcrankingCycleBins();
 ```

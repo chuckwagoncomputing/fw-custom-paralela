@@ -169,16 +169,6 @@ static void cannedetbBiasValues() {
 	copyArray(config->etbBiasValues, hardCodedetbBiasValues);
 }
 
-static void cannedcrankingCycleBins() {
-	static const float hardCodedcrankingCycleBins[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
-	copyArray(config->crankingCycleBins, hardCodedcrankingCycleBins);
-}
-
-static void cannedcrankingCycleCoef() {
-	static const float hardCodedcrankingCycleCoef[8] = {2.0, 1.300003, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-	copyArray(config->crankingCycleCoef, hardCodedcrankingCycleCoef);
-}
-
 static void cannedcltIdleCorrBins() {
 	static const float hardCodedcltIdleCorrBins[16] = {-40.0, -30.410034, -21.25, -9.919983, 0.11000013, 10.0, 20.0, 30.0, 39.779785, 50.52, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0};
 	copyArray(config->cltIdleCorrBins, hardCodedcltIdleCorrBins);
@@ -1447,6 +1437,11 @@ static void cannedpostCrankingFactor() {
 {0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
 };
 	copyTable(engineConfiguration->postCrankingFactor, hardCodedpostCrankingFactor);
+}
+
+static void cannedcrankingCycleBins() {
+	static const float hardCodedcrankingCycleBins[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
+	copyArray(config->crankingCycleBins, hardCodedcrankingCycleBins);
 }
 
 ```

@@ -383,8 +383,6 @@
 	cannedcltRevLimitRpm();
 	cannedetbBiasBins();
 	cannedetbBiasValues();
-	cannedcrankingCycleBins();
-	cannedcrankingCycleCoef();
 	cannedcltIdleCorrBins();
 	cannedcltIdleCorr();
 	cannedcltCrankingCorrBins();
@@ -551,4 +549,5 @@
 	cannedhpfpTargetLoadBins();
 	cannedhpfpCompensation();
 	cannedpostCrankingFactor();
+	cannedcrankingCycleBins();
 ```

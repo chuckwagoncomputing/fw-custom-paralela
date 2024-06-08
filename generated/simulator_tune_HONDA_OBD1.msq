@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0240607E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240608E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -507,7 +507,7 @@
         <constant digits="1" name="noFuelTrimAfterDfcoTime" units="sec">0.0</constant>
         <constant digits="0" name="launchSpeedThreshold" units="Kph">30.0</constant>
         <constant digits="0" name="launchRpmWindow" units="RPM">500.0</constant>
-        <constant digits="0" name="unusedHere12" units="">0.0</constant>
+        <constant digits="3" name="triggerEventsTimeoutMs" units="ms">0.0</constant>
         <constant digits="0" name="unusedHere13" units="">0.0</constant>
         <constant digits="0" name="magicNumberAvailableForDevTricks" units="">1.0</constant>
         <constant digits="0" name="turbochargerFilter" units="">0.01</constant>
@@ -2472,16 +2472,6 @@ end</constant>
          0.0
          0.0
 </constant>
-        <constant cols="1" digits="2" name="crankingCycleCoef" rows="8">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-</constant>
         <constant cols="1" digits="0" name="crankingCycleBins" rows="8">
          0.0
          0.0
@@ -2498,13 +2488,11 @@ end</constant>
          0.0
          0.0
 </constant>
-        <constant cols="4" digits="2" name="crankingCycleFuelCoef" rows="6">
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0
+        <constant cols="8" digits="2" name="crankingCycleFuelCoef" rows="4">
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 </constant>
         <constant cols="1" digits="2" name="cltIdleCorrBins" rows="16">
          0.0
@@ -2819,11 +2807,11 @@ end</constant>
         <constant cols="16" digits="1" name="ignitionTable" rows="16">
          1310.7 1643.5 -1310.7 1639.6 2621.4 1635.8 2621.4 1632.6 2621.4 1629.4 -1310.7 1626.8 0.0 1625.6 0.0 1625.6
          0.0 -1596.8 0.0 -1609.6 0.0 1654.4 0.0 1680.0 0.0 1690.8 0.0 1696.8 0.0 1702.6 0.0 1707.6
-         0.0 1638.4 2621.4 1629.4 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
          0.0 1625.6 0.0 1638.4 0.0 1644.8 0.0 1651.2 0.0 1654.4 0.0 1657.6 0.0 1660.8 0.0 1664.0
-         -4.0 0.7 5.3 10.0 0.0 1638.4 2621.4 1629.4 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
-         0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
-         0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
+         0.0 2.0 4.0 6.0 0.0 1638.4 2621.4 1629.4 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
+         0.0 1625.6 0.0 1625.6 0.0 1638.4 2621.4 1629.4 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
+         0.0 1625.6 0.0 1625.6 0.0 1638.4 2621.4 1629.4 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
+         0.0 1625.6 0.0 1625.6 0.0 1638.4 2621.4 1629.4 0.0 1625.6 0.0 1625.6 0.0 1625.6 0.0 1625.6
          0.0 1625.6 0.0 1625.6 0.0 -1584.0 0.0 -1588.8 0.0 -1596.8 0.0 -1609.6 0.0 0.0 0.0 1667.2
          0.0 1680.0 0.0 1688.0 0.0 1692.8 0.0 1696.8 0.0 1700.8 0.0 1703.6 0.0 1705.6 0.0 1707.6
          0.0 1709.6 0.0 1711.6 0.0 1632.0 0.0 1632.0 -2184.5 1629.8 -2184.5 1629.8 -2184.5 1629.8 -2184.5 1629.8
@@ -4732,7 +4720,7 @@ end</constant>
 </constant>
         <constant digits="0" name="tcu_shiftTime" units="ms">0.0</constant>
     </page>
-    <versionInfo firmwareInfo="20240607" nPages="1" signature="rusEFI master.2024.06.07.paralela.517570310" version="5.0"/>
+    <versionInfo firmwareInfo="20240607" nPages="1" signature="rusEFI master.2024.06.08.paralela.3824919480" version="5.0"/>
     <bibliography author="rusEFI 20240607" writeDate="date"/>
     <settings/>
     <userComments/>

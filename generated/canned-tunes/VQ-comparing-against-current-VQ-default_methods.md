@@ -134,16 +134,6 @@ static void cannedcltRevLimitRpm() {
 	copyArray(config->cltRevLimitRpm, hardCodedcltRevLimitRpm);
 }
 
-static void cannedcrankingCycleBins() {
-	static const float hardCodedcrankingCycleBins[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
-	copyArray(config->crankingCycleBins, hardCodedcrankingCycleBins);
-}
-
-static void cannedcrankingCycleCoef() {
-	static const float hardCodedcrankingCycleCoef[8] = {1.5, 1.25, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-	copyArray(config->crankingCycleCoef, hardCodedcrankingCycleCoef);
-}
-
 static void cannedcltIdleCorrBins() {
 	static const float hardCodedcltIdleCorrBins[16] = {-40.0, -30.0, -20.0, -10.0, 0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0};
 	copyArray(config->cltIdleCorrBins, hardCodedcltIdleCorrBins);
@@ -1319,6 +1309,11 @@ static void cannedpostCrankingFactor() {
 {1.200,	1.000,	1.000,	1.000,	1.000,	1.000,	},
 };
 	copyTable(engineConfiguration->postCrankingFactor, hardCodedpostCrankingFactor);
+}
+
+static void cannedcrankingCycleBins() {
+	static const float hardCodedcrankingCycleBins[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
+	copyArray(config->crankingCycleBins, hardCodedcrankingCycleBins);
 }
 
 ```
