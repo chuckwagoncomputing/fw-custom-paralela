@@ -99,29 +99,9 @@ static void nb2cannedmafDecoding() {
 	copyArray(config->mafDecoding, hardCodedmafDecoding);
 }
 
-static void nb2cannediatFuelCorrBins() {
-	static const float hardCodediatFuelCorrBins[16] = {-40.0, -30.0, -20.0, -10.0, 0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0};
-	copyArray(config->iatFuelCorrBins, hardCodediatFuelCorrBins);
-}
-
-static void nb2cannediatFuelCorr() {
-	static const float hardCodediatFuelCorr[16] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-	copyArray(config->iatFuelCorr, hardCodediatFuelCorr);
-}
-
-static void nb2cannedcltFuelCorrBins() {
-	static const float hardCodedcltFuelCorrBins[16] = {-40.0, -30.0, -20.0, -10.0, 0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0};
-	copyArray(config->cltFuelCorrBins, hardCodedcltFuelCorrBins);
-}
-
 static void nb2cannedcltFuelCorr() {
 	static const float hardCodedcltFuelCorr[16] = {1.5, 1.5, 1.4199982, 1.3600006, 1.2799988, 1.199997, 1.1800003, 1.1500015, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1};
 	copyArray(config->cltFuelCorr, hardCodedcltFuelCorr);
-}
-
-static void nb2cannedcrankingFuelBins() {
-	static const float hardCodedcrankingFuelBins[8] = {-20.0, -10.0, 5.0, 20.0, 35.0, 50.0, 65.0, 90.0};
-	copyArray(config->crankingFuelBins, hardCodedcrankingFuelBins);
 }
 
 static void nb2cannedcrankingFuelCoef() {
@@ -137,11 +117,6 @@ static void nb2cannedcrankingFuelCoefE100() {
 static void nb2cannedcltRevLimitRpmBins() {
 	static const float hardCodedcltRevLimitRpmBins[4] = {0.0, 0.0, 0.0, 0.0};
 	copyArray(config->cltRevLimitRpmBins, hardCodedcltRevLimitRpmBins);
-}
-
-static void nb2cannedcltRevLimitRpm() {
-	static const float hardCodedcltRevLimitRpm[4] = {0.0, 0.0, 0.0, 0.0};
-	copyArray(config->cltRevLimitRpm, hardCodedcltRevLimitRpm);
 }
 
 static void nb2cannedcltIdleCorrBins() {
@@ -189,129 +164,19 @@ static void nb2cannedfuelLevelBins() {
 	copyArray(config->fuelLevelBins, hardCodedfuelLevelBins);
 }
 
-static void nb2cannedfuelLevelValues() {
-	static const float hardCodedfuelLevelValues[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->fuelLevelValues, hardCodedfuelLevelValues);
+static void nb2cannedhpfpLobeProfileQuantityBins() {
+	static const float hardCodedhpfpLobeProfileQuantityBins[16] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+	copyArray(config->hpfpLobeProfileQuantityBins, hardCodedhpfpLobeProfileQuantityBins);
 }
 
-static void nb2cannedwwCltBins() {
-	static const float hardCodedwwCltBins[8] = {-40.0, -20.0, 0.0, 20.0, 40.0, 60.0, 80.0, 100.0};
-	copyArray(config->wwCltBins, hardCodedwwCltBins);
+static void nb2cannedhpfpLobeProfileAngle() {
+	static const float hardCodedhpfpLobeProfileAngle[16] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+	copyArray(config->hpfpLobeProfileAngle, hardCodedhpfpLobeProfileAngle);
 }
 
-static void nb2cannedwwTauCltValues() {
-	static const float hardCodedwwTauCltValues[8] = {1.45, 1.3, 1.17, 1.05, 0.9, 0.82, 0.75, 0.7};
-	copyArray(config->wwTauCltValues, hardCodedwwTauCltValues);
-}
-
-static void nb2cannedwwMapBins() {
-	static const float hardCodedwwMapBins[8] = {10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0};
-	copyArray(config->wwMapBins, hardCodedwwMapBins);
-}
-
-static void nb2cannedwwTauMapValues() {
-	static const float hardCodedwwTauMapValues[8] = {0.38, 0.55, 0.69, 0.86, 0.9, 0.95, 0.97, 1.0};
-	copyArray(config->wwTauMapValues, hardCodedwwTauMapValues);
-}
-
-static void nb2cannedwwBetaCltValues() {
-	static const float hardCodedwwBetaCltValues[8] = {0.73, 0.66, 0.57, 0.46, 0.38, 0.31, 0.24, 0.19};
-	copyArray(config->wwBetaCltValues, hardCodedwwBetaCltValues);
-}
-
-static void nb2cannedwwBetaMapValues() {
-	static const float hardCodedwwBetaMapValues[8] = {0.21, 0.4, 0.6, 0.79, 0.85, 0.9, 0.95, 1.0};
-	copyArray(config->wwBetaMapValues, hardCodedwwBetaMapValues);
-}
-
-static void nb2cannedtcu_tccTpsBins() {
-	static const float hardCodedtcu_tccTpsBins[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_tccTpsBins, hardCodedtcu_tccTpsBins);
-}
-
-static void nb2cannedtcu_tccLockSpeed() {
-	static const float hardCodedtcu_tccLockSpeed[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_tccLockSpeed, hardCodedtcu_tccLockSpeed);
-}
-
-static void nb2cannedtcu_tccUnlockSpeed() {
-	static const float hardCodedtcu_tccUnlockSpeed[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_tccUnlockSpeed, hardCodedtcu_tccUnlockSpeed);
-}
-
-static void nb2cannedtcu_pcAirmassBins() {
-	static const float hardCodedtcu_pcAirmassBins[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcAirmassBins, hardCodedtcu_pcAirmassBins);
-}
-
-static void nb2cannedtcu_pcValsR() {
-	static const float hardCodedtcu_pcValsR[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcValsR, hardCodedtcu_pcValsR);
-}
-
-static void nb2cannedtcu_pcValsN() {
-	static const float hardCodedtcu_pcValsN[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcValsN, hardCodedtcu_pcValsN);
-}
-
-static void nb2cannedtcu_pcVals1() {
-	static const float hardCodedtcu_pcVals1[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals1, hardCodedtcu_pcVals1);
-}
-
-static void nb2cannedtcu_pcVals2() {
-	static const float hardCodedtcu_pcVals2[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals2, hardCodedtcu_pcVals2);
-}
-
-static void nb2cannedtcu_pcVals3() {
-	static const float hardCodedtcu_pcVals3[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals3, hardCodedtcu_pcVals3);
-}
-
-static void nb2cannedtcu_pcVals4() {
-	static const float hardCodedtcu_pcVals4[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals4, hardCodedtcu_pcVals4);
-}
-
-static void nb2cannedtcu_pcVals12() {
-	static const float hardCodedtcu_pcVals12[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals12, hardCodedtcu_pcVals12);
-}
-
-static void nb2cannedtcu_pcVals23() {
-	static const float hardCodedtcu_pcVals23[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals23, hardCodedtcu_pcVals23);
-}
-
-static void nb2cannedtcu_pcVals34() {
-	static const float hardCodedtcu_pcVals34[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals34, hardCodedtcu_pcVals34);
-}
-
-static void nb2cannedtcu_pcVals21() {
-	static const float hardCodedtcu_pcVals21[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals21, hardCodedtcu_pcVals21);
-}
-
-static void nb2cannedtcu_pcVals32() {
-	static const float hardCodedtcu_pcVals32[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals32, hardCodedtcu_pcVals32);
-}
-
-static void nb2cannedtcu_pcVals43() {
-	static const float hardCodedtcu_pcVals43[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-	copyArray(config->tcu_pcVals43, hardCodedtcu_pcVals43);
-}
-
-static void nb2cannedtpsTpsAccelFromRpmBins() {
-	static const float hardCodedtpsTpsAccelFromRpmBins[8] = {0.0, 10.0, 30.0, 40.0, 60.0, 70.0, 90.0, 100.0};
-	copyArray(config->tpsTpsAccelFromRpmBins, hardCodedtpsTpsAccelFromRpmBins);
-}
-
-static void nb2cannedtpsTpsAccelToRpmBins() {
-	static const float hardCodedtpsTpsAccelToRpmBins[8] = {0.0, 10.0, 30.0, 40.0, 60.0, 70.0, 90.0, 100.0};
-	copyArray(config->tpsTpsAccelToRpmBins, hardCodedtpsTpsAccelToRpmBins);
+static void nb2cannedhpfpDeadtimeVoltsBins() {
+	static const float hardCodedhpfpDeadtimeVoltsBins[8] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+	copyArray(config->hpfpDeadtimeVoltsBins, hardCodedhpfpDeadtimeVoltsBins);
 }
 
 static void nb2cannedtpsTpsAccelTable() {
@@ -390,82 +255,9 @@ static void nb2cannedvvtTable1() {
 	copyTable(config->vvtTable1, hardCodedvvtTable1);
 }
 
-static void nb2cannedvvtTable2RpmBins() {
-	static const float hardCodedvvtTable2RpmBins[8] = {650.0, 800.0, 1700.0, 2600.0, 3500.0, 4400.0, 5300.0, 7000.0};
-	copyArray(config->vvtTable2RpmBins, hardCodedvvtTable2RpmBins);
-}
-
-static void nb2cannedvvtTable2LoadBins() {
-	static const float hardCodedvvtTable2LoadBins[8] = {20.0, 30.0, 50.0, 60.0, 80.0, 90.0, 110.0, 120.0};
-	copyArray(config->vvtTable2LoadBins, hardCodedvvtTable2LoadBins);
-}
-
-static void nb2cannedvvtTable2() {
-	static const float hardCodedvvtTable2[8][8] = {
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(config->vvtTable2, hardCodedvvtTable2);
-}
-
-static void nb2cannedscriptTable1RpmBins() {
-	static const float hardCodedscriptTable1RpmBins[8] = {650.0, 800.0, 1700.0, 2600.0, 3500.0, 4400.0, 5300.0, 7000.0};
-	copyArray(config->scriptTable1RpmBins, hardCodedscriptTable1RpmBins);
-}
-
-static void nb2cannedscriptTable1LoadBins() {
-	static const float hardCodedscriptTable1LoadBins[8] = {20.0, 30.0, 50.0, 60.0, 80.0, 90.0, 110.0, 120.0};
-	copyArray(config->scriptTable1LoadBins, hardCodedscriptTable1LoadBins);
-}
-
-static void nb2cannedscriptTable2RpmBins() {
-	static const float hardCodedscriptTable2RpmBins[8] = {650.0, 800.0, 1700.0, 2600.0, 3500.0, 4400.0, 5300.0, 7000.0};
-	copyArray(config->scriptTable2RpmBins, hardCodedscriptTable2RpmBins);
-}
-
-static void nb2cannedscriptTable2LoadBins() {
-	static const float hardCodedscriptTable2LoadBins[8] = {20.0, 30.0, 50.0, 60.0, 80.0, 90.0, 110.0, 120.0};
-	copyArray(config->scriptTable2LoadBins, hardCodedscriptTable2LoadBins);
-}
-
-static void nb2cannedscriptTable3RpmBins() {
-	static const float hardCodedscriptTable3RpmBins[8] = {650.0, 800.0, 1700.0, 2600.0, 3500.0, 4400.0, 5300.0, 7000.0};
-	copyArray(config->scriptTable3RpmBins, hardCodedscriptTable3RpmBins);
-}
-
-static void nb2cannedscriptTable3LoadBins() {
-	static const float hardCodedscriptTable3LoadBins[8] = {20.0, 30.0, 50.0, 60.0, 80.0, 90.0, 110.0, 120.0};
-	copyArray(config->scriptTable3LoadBins, hardCodedscriptTable3LoadBins);
-}
-
-static void nb2cannedscriptTable3() {
-	static const float hardCodedscriptTable3[8][8] = {
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(config->scriptTable3, hardCodedscriptTable3);
-}
-
 static void nb2cannedscriptTable4RpmBins() {
 	static const float hardCodedscriptTable4RpmBins[10] = {650.0, 800.0, 1700.0, 2600.0, 3500.0, 4400.0, 5300.0, 7000.0, 0.0, 0.0};
 	copyArray(config->scriptTable4RpmBins, hardCodedscriptTable4RpmBins);
-}
-
-static void nb2cannedscriptTable4LoadBins() {
-	static const float hardCodedscriptTable4LoadBins[8] = {20.0, 30.0, 50.0, 60.0, 80.0, 90.0, 110.0, 120.0};
-	copyArray(config->scriptTable4LoadBins, hardCodedscriptTable4LoadBins);
 }
 
 static void nb2cannedscriptTable4() {
@@ -517,6 +309,20 @@ static void nb2cannedignitionTable() {
 static void nb2cannedignitionIatCorrLoadBins() {
 	static const float hardCodedignitionIatCorrLoadBins[8] = {-40.0, -30.0, -20.0, -10.0, 0.0, 10.0, 20.0, 30.0};
 	copyArray(config->ignitionIatCorrLoadBins, hardCodedignitionIatCorrLoadBins);
+}
+
+static void nb2cannedignitionIatCorrTable() {
+	static const float hardCodedignitionIatCorrTable[8][8] = {
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+};
+	copyTable(config->ignitionIatCorrTable, hardCodedignitionIatCorrTable);
 }
 
 static void nb2cannedveRpmBins() {
@@ -581,126 +387,6 @@ static void nb2cannedfuelTrimLoadBins() {
 	copyArray(config->fuelTrimLoadBins, hardCodedfuelTrimLoadBins);
 }
 
-static void nb2cannedfuelTrims1_table() {
-	static const float hardCodedfuelTrims1_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims1_table, hardCodedfuelTrims1_table);
-}
-
-static void nb2cannedfuelTrims2_table() {
-	static const float hardCodedfuelTrims2_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims2_table, hardCodedfuelTrims2_table);
-}
-
-static void nb2cannedfuelTrims3_table() {
-	static const float hardCodedfuelTrims3_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims3_table, hardCodedfuelTrims3_table);
-}
-
-static void nb2cannedfuelTrims4_table() {
-	static const float hardCodedfuelTrims4_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims4_table, hardCodedfuelTrims4_table);
-}
-
-static void nb2cannedfuelTrims5_table() {
-	static const float hardCodedfuelTrims5_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims5_table, hardCodedfuelTrims5_table);
-}
-
-static void nb2cannedfuelTrims6_table() {
-	static const float hardCodedfuelTrims6_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims6_table, hardCodedfuelTrims6_table);
-}
-
-static void nb2cannedfuelTrims7_table() {
-	static const float hardCodedfuelTrims7_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims7_table, hardCodedfuelTrims7_table);
-}
-
-static void nb2cannedfuelTrims8_table() {
-	static const float hardCodedfuelTrims8_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims8_table, hardCodedfuelTrims8_table);
-}
-
-static void nb2cannedfuelTrims9_table() {
-	static const float hardCodedfuelTrims9_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims9_table, hardCodedfuelTrims9_table);
-}
-
-static void nb2cannedfuelTrims10_table() {
-	static const float hardCodedfuelTrims10_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims10_table, hardCodedfuelTrims10_table);
-}
-
-static void nb2cannedfuelTrims11_table() {
-	static const float hardCodedfuelTrims11_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims11_table, hardCodedfuelTrims11_table);
-}
-
-static void nb2cannedfuelTrims12_table() {
-	static const float hardCodedfuelTrims12_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->fuelTrims12.fuelTrims12_table, hardCodedfuelTrims12_table);
-}
-
 static void nb2cannedignTrimRpmBins() {
 	static const float hardCodedignTrimRpmBins[4] = {0.0, 0.0, 0.0, 0.0};
 	copyArray(config->ignTrimRpmBins, hardCodedignTrimRpmBins);
@@ -709,126 +395,6 @@ static void nb2cannedignTrimRpmBins() {
 static void nb2cannedignTrimLoadBins() {
 	static const float hardCodedignTrimLoadBins[4] = {0.0, 0.0, 0.0, 0.0};
 	copyArray(config->ignTrimLoadBins, hardCodedignTrimLoadBins);
-}
-
-static void nb2cannedignTrims1_table() {
-	static const float hardCodedignTrims1_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims1_table, hardCodedignTrims1_table);
-}
-
-static void nb2cannedignTrims2_table() {
-	static const float hardCodedignTrims2_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims2_table, hardCodedignTrims2_table);
-}
-
-static void nb2cannedignTrims3_table() {
-	static const float hardCodedignTrims3_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims3_table, hardCodedignTrims3_table);
-}
-
-static void nb2cannedignTrims4_table() {
-	static const float hardCodedignTrims4_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims4_table, hardCodedignTrims4_table);
-}
-
-static void nb2cannedignTrims5_table() {
-	static const float hardCodedignTrims5_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims5_table, hardCodedignTrims5_table);
-}
-
-static void nb2cannedignTrims6_table() {
-	static const float hardCodedignTrims6_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims6_table, hardCodedignTrims6_table);
-}
-
-static void nb2cannedignTrims7_table() {
-	static const float hardCodedignTrims7_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims7_table, hardCodedignTrims7_table);
-}
-
-static void nb2cannedignTrims8_table() {
-	static const float hardCodedignTrims8_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims8_table, hardCodedignTrims8_table);
-}
-
-static void nb2cannedignTrims9_table() {
-	static const float hardCodedignTrims9_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims9_table, hardCodedignTrims9_table);
-}
-
-static void nb2cannedignTrims10_table() {
-	static const float hardCodedignTrims10_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims10_table, hardCodedignTrims10_table);
-}
-
-static void nb2cannedignTrims11_table() {
-	static const float hardCodedignTrims11_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims11_table, hardCodedignTrims11_table);
-}
-
-static void nb2cannedignTrims12_table() {
-	static const float hardCodedignTrims12_table[4][4] = {
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(engineConfiguration->ignTrims12.ignTrims12_table, hardCodedignTrims12_table);
 }
 
 static void nb2cannedmapEstimateRpmBins() {
@@ -841,14 +407,26 @@ static void nb2cannedmapEstimateTpsBins() {
 	copyArray(config->mapEstimateTpsBins, hardCodedmapEstimateTpsBins);
 }
 
-static void nb2cannedinjPhaseRpmBins() {
-	static const float hardCodedinjPhaseRpmBins[16] = {650.0, 800.0, 1100.0, 1400.0, 1700.0, 2000.0, 2300.0, 2600.0, 2900.0, 3200.0, 3500.0, 3800.0, 4100.0, 4400.0, 4700.0, 7000.0};
-	copyArray(config->injPhaseRpmBins, hardCodedinjPhaseRpmBins);
-}
-
-static void nb2cannedinjPhaseLoadBins() {
-	static const float hardCodedinjPhaseLoadBins[16] = {10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 110.0, 120.0, 130.0, 140.0, 150.0, 160.0};
-	copyArray(config->injPhaseLoadBins, hardCodedinjPhaseLoadBins);
+static void nb2cannedmapEstimateTable() {
+	static const float hardCodedmapEstimateTable[16][16] = {
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+};
+	copyTable(config->mapEstimateTable, hardCodedmapEstimateTable);
 }
 
 static void nb2cannedinjectionPhase() {
@@ -910,6 +488,18 @@ static void nb2cannedlambdaTable() {
 	copyTable(config->lambdaTable, hardCodedlambdaTable);
 }
 
+static void nb2cannedtcuSolenoidTable() {
+	static const float hardCodedtcuSolenoidTable[6][10] = {
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
+};
+	copyTable(config->tcuSolenoidTable, hardCodedtcuSolenoidTable);
+}
+
 static void nb2cannedhpfpTargetRpmBins() {
 	static const float hardCodedhpfpTargetRpmBins[10] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 	copyArray(config->hpfpTargetRpmBins, hardCodedhpfpTargetRpmBins);
@@ -920,20 +510,14 @@ static void nb2cannedhpfpTargetLoadBins() {
 	copyArray(config->hpfpTargetLoadBins, hardCodedhpfpTargetLoadBins);
 }
 
-static void nb2cannedhpfpCompensation() {
-	static const float hardCodedhpfpCompensation[10][10] = {
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-{0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
-};
-	copyTable(config->hpfpCompensation, hardCodedhpfpCompensation);
+static void nb2cannedhpfpCompensationRpmBins() {
+	static const float hardCodedhpfpCompensationRpmBins[10] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+	copyArray(config->hpfpCompensationRpmBins, hardCodedhpfpCompensationRpmBins);
+}
+
+static void nb2cannedhpfpCompensationLoadBins() {
+	static const float hardCodedhpfpCompensationLoadBins[10] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+	copyArray(config->hpfpCompensationLoadBins, hardCodedhpfpCompensationLoadBins);
 }
 
 static void nb2cannedpostCrankingFactor() {
@@ -946,11 +530,6 @@ static void nb2cannedpostCrankingFactor() {
 {0.000,	0.000,	0.000,	0.000,	0.000,	0.000,	},
 };
 	copyTable(engineConfiguration->postCrankingFactor, hardCodedpostCrankingFactor);
-}
-
-static void nb2cannedcrankingCycleBins() {
-	static const float hardCodedcrankingCycleBins[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
-	copyArray(config->crankingCycleBins, hardCodedcrankingCycleBins);
 }
 
 ```
