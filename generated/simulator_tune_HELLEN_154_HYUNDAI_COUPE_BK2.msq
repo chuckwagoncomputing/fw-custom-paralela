@@ -225,7 +225,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0241205E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0241207E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -1682,14 +1682,10 @@
         <constant digits="1" name="dfcoRetardRampInTime" units="s">0.0</constant>
         <constant name="nitrousRelayPin">"NONE"</constant>
         <constant name="nitrousRelayPinMode">"default"</constant>
-        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="73">
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
-         0.0
+        <constant digits="0" name="nitrousFuelAdderPercent" units="%">0.0</constant>
+        <constant digits="2" name="nitrousIgnitionRetard" units="deg">0.0</constant>
+        <constant digits="0" name="nitrousMinimumVehicleSpeed" units="Kph">0.0</constant>
+        <constant cols="1" digits="0" name="unusedOftenChangesDuringFirmwareUpdate" rows="66">
          0.0
          0.0
          0.0
@@ -4789,7 +4785,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20241205" nPages="1" signature="rusEFI master.2024.12.05.paralela.3104401338" version="5.0"/>
+    <versionInfo firmwareInfo="20241205" nPages="1" signature="rusEFI master.2024.12.07.paralela.3861406636" version="5.0"/>
     <bibliography author="rusEFI 20241205" writeDate="date"/>
     <settings/>
     <userComments/>
